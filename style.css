@@ -1,0 +1,98 @@
+/* Styles for submission form */
+#quote-submission-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+#quote-submission-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#quote-submission-form input[type="text"],
+#quote-submission-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#quote-submission-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#quote-submission-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styles for displayed quotes */
+.latest-quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.quote-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quote-item h2 {
+    margin-top: 0;
+}
+
+.quote-item p {
+    margin-bottom: 10px;
+}
+
+/* Styles for vote buttons */
+.quote-vote {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vote-button {
+    background-color: #0073aa;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.vote-button:hover {
+    background-color: #005177;
+}
+
+.vote-button[data-vote-type="downvote"] {
+    background-color: #d63638;
+}
+
+.vote-button[data-vote-type="downvote"]:hover {
+    background-color: #a42a2b;
+}
+
+/* Styles for vote count */
+.quote-vote span {
+    font-weight: bold;
+    margin-left: 10px;
+}
