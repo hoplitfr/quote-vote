@@ -45,19 +45,6 @@ Displays the latest quotes. The `number` attribute specifies the number of quote
 1. Navigate to the `Quote Vote` menu in the WordPress admin area.
 2. Approve or reject pending quotes.
 
-## Customization
-
-### Styles
-
-The plugin includes a custom stylesheet that can be enqueued using the following function:
-
-```php
-function quote_vote_enqueue_styles() {
-    wp_enqueue_style( 'quote-vote-style', plugin_dir_url( __FILE__ ) . 'style.css' );
-}
-add_action( 'wp_enqueue_scripts', 'quote_vote_enqueue_styles' );
-```
-
 # TODO
 * [ ] Prevent spamming of the voting buttons
 * [ ] Improve the approve/reject interface design
