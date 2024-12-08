@@ -46,5 +46,5 @@ Displays the latest quotes. The `number` attribute specifies the number of quote
 2. Approve or reject pending quotes.
 
 # TODO
-* [ ] Prevent spamming of the voting buttons
+* [x] Prevent spamming of the voting buttons
 * [ ] Improve the approve/reject interface design
